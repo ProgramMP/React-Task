@@ -1,1 +1,1 @@
-
+This React application displays the latest 20 posts and includes functionality for filtering posts by user ID. When a new post is created, it appears at the top of the list, becoming the newest of the 20 posts displayed. The new post is automatically associated with user ID 11, allowing it to be filtered accordingly.
