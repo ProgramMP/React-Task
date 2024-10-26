@@ -15,6 +15,7 @@
 
 .button {
   margin-top: 3%;
+  margin-left: 5%;
   font-size: 18px;
   border-radius: 8px;
   border: 1px solid transparent;
@@ -32,7 +33,7 @@
   color: white;
   border: 0;
   background-color: transparent;
-  margin-left: 15%;
+
   cursor: pointer;
 }
 

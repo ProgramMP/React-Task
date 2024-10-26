@@ -98,6 +98,7 @@ export default function App() {
           {button && <Filter buttons={array} />}
           {!button && (
             <>
+              <div className={classes.height}></div>
               <Posts
                 data={JSON.parse(newData).filter((post, index) => index < 20)}
               ></Posts>

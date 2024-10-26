@@ -94,15 +94,15 @@ export default function AddPost({}) {
               <label>Message</label>
               <input ref={message} required></input>
             </div>
-            <button disabled={loading} className={classes.button}>
-              Add Post
-            </button>
             <button
               onClick={handleCloseMenu}
               type="button"
               className={classes.cancel}
             >
               Cancel
+            </button>
+            <button disabled={loading} className={classes.button}>
+              Submit
             </button>
           </form>
         )}

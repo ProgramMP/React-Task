@@ -82,7 +82,14 @@ export default function Filter(buttons) {
           })}
         </ul>
         {error && <p>Failed to fetch posts</p>}
-        {loading ? <p>Loading Posts</p> : <Posts data={filteredData}></Posts>}
+        {loading ? (
+          <p>Loading Posts</p>
+        ) : (
+          <>
+            <div className={classes.block}></div>
+            <Posts data={filteredData}></Posts>
+          </>
+        )}
       </div>
     </>
   );
