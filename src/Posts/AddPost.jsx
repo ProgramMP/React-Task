@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { menuActions } from "../Store/CustomPost";
 import classes from "./AddPost.module.css";
@@ -76,7 +77,7 @@ export default function AddPost({}) {
     [data]
   );
 
-  return (
+  return createPortal(
     <>
       <div
         className={menu ? classes.overlay : ""}
@@ -114,6 +115,7 @@ export default function AddPost({}) {
           </>
         )}
       </dialog>
-    </>
+    </>,
+    document.getElementById("modal")
   );
 }

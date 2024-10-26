@@ -1,10 +1,10 @@
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { menuActions } from "./Store/CustomPost";
 import AddPost from "./Posts/AddPost";
 import Filter from "./Posts/Filter";
 import Posts from "./Posts/Posts";
-import { useEffect, useState } from "react";
 import classes from "./App.module.css";
-import { useDispatch, useSelector } from "react-redux";
-import { menuActions } from "./Store/CustomPost";
 
 export default function App() {
   const [data, setData] = useState();

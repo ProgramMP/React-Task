@@ -8,7 +8,7 @@ export default function Filter(buttons) {
   const [error, setError] = useState();
   const [active, setActive] = useState(1);
   const localData = localStorage.getItem("posts");
-  const [newId, setNewId] = useState(11);
+  const newId = 11;
 
   if (
     JSON.parse(localData)[0].userId === newId &&
