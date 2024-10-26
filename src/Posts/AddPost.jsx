@@ -94,22 +94,24 @@ export default function AddPost({}) {
               <label>Message</label>
               <input ref={message} required></input>
             </div>
-            <button
-              onClick={handleCloseMenu}
-              type="button"
-              className={classes.cancel}
-            >
-              Cancel
-            </button>
-            <button disabled={loading} className={classes.button}>
-              Submit
-            </button>
+            <div className={classes.center}>
+              <button
+                onClick={handleCloseMenu}
+                type="button"
+                className={classes.cancel}
+              >
+                Cancel
+              </button>
+              <button disabled={loading} className={classes.button}>
+                Submit
+              </button>
+            </div>
           </form>
         )}
         {modal && (
           <>
             <p className={classes.message}>Your Post Was Added!</p>
-            <button className={classes.button} onClick={handleCloseMenu}>
+            <button className={classes.okay} onClick={handleCloseMenu}>
               Okay
             </button>
           </>

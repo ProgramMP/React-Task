@@ -66,6 +66,7 @@ export default function Filter(buttons) {
     <>
       <div>
         <ul className={classes.ul}>
+          <p className={classes.id}>UserID :</p>
           {buttons.buttons.map(function (post) {
             return (
               <button

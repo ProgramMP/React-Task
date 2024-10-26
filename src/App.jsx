@@ -93,7 +93,7 @@ export default function App() {
             Add Post
           </button>
           <button className={classes.filter} onClick={handleFilterButton}>
-            {button ? "See Less" : "See More"}
+            {button ? "Hide Filter" : "Show Filter"}
           </button>
           {button && <Filter buttons={array} />}
           {!button && (

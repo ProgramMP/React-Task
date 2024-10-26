@@ -4,7 +4,7 @@
   flex-direction: column;
 
   input {
-    width: 70%;
+    width: 90%;
     height: 30px;
     margin-bottom: 2%;
   }
@@ -14,26 +14,26 @@
 }
 
 .button {
-  margin-top: 3%;
-  margin-left: 5%;
+  margin-right: 55%;
   font-size: 18px;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  background-color: #1a1a1a;
+  background-color: #444444;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 .button:hover {
-  border-color: rgb(255, 165, 0);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .cancel {
+  margin: 0 auto;
+
   font-size: 18px;
   color: white;
   border: 0;
   background-color: transparent;
-
   cursor: pointer;
 }
 
@@ -46,11 +46,11 @@
 }
 
 .modal {
-  background-color: rgb(0, 0, 0);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  background-color: #2c2c2c;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 6px;
   border: none;
-  width: 80%;
+  width: 50%;
   max-width: 40rem;
   animation: fade-slide-up 0.3s ease-out forwards;
 }
@@ -70,6 +70,32 @@
 
 .overlay {
   background: rgba(49, 49, 49, 0.8);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.message {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.okay {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 3em;
+  background-color: #444444;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.okay:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes fade-slide-up {
