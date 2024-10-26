@@ -1,0 +1,27 @@
+.addPost {
+  display: flex;
+  color: black;
+  background-color: rgb(255, 165, 0);
+  font-size: 20px;
+  margin-right: 0%;
+  margin-bottom: 2%;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 85%;
+  margin-top: 1%;
+}
+
+.addPost:hover {
+  border-color: black;
+}
+
+.filter {
+  margin-top: 1%;
+  margin-left: 11%;
+  font-size: 20px;
+  cursor: pointer;
+}
+.filter:hover {
+  color: rgb(255, 165, 0);
+}

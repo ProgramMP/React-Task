@@ -1,0 +1,29 @@
+ul {
+  display: block;
+
+  margin-left: 8%;
+  margin-right: auto;
+}
+
+.li {
+  float: left;
+  text-align: center;
+  width: 40%;
+  list-style: none;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-radius: 20px;
+  height: 240px;
+  padding-right: 2%;
+  padding-left: 2%;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    width: 100%;
+  }
+  p {
+    width: 100%;
+  }
+}
